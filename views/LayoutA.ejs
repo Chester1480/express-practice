@@ -3,39 +3,53 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="javascripts/jquery-3.3.1.min.js" ></script>
     <script src="javascripts/bootstrap.min.js" ></script>
-     
+    
         <title><%= title %></title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Home</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon"></span>
-              </button>
-                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">RE1</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">RE2</a>
-                          </li>    
-                        </ul>
-                      </div>  
-      </nav> 
+  <header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#"><i class="fa fa-battery-full" style="font-size:36px"></i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size:24px"></i><span class="sr-only"></span>關於我</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-lightbulb-o" style="font-size:24px"></i><span class="sr-only"></span>學習資源</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-thumb-tack" style="font-size:24px"></i><span class="sr-only"></span>目前目標</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
          <%- body -%>
 </body>
 
 </html>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
     <footer class="">
         <div class="navbar-brand">
           <span class="">Place sticky footer content here.</span>
