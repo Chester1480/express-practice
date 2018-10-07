@@ -6,6 +6,8 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "ejs": "^2.5.9",
@@ -15,6 +17,22 @@
     "express-partials": "^0.3.0",
     "http-errors": "~1.6.2",
     "jquery": "^3.3.1",
-    "morgan": "~1.9.0"
-  }
+    "morgan": "~1.9.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "description": "實作nodejs 框架 之應用",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chester1480/express-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chester1480/express-practice/issues"
+  },
+  "homepage": "https://github.com/Chester1480/express-practice#readme"
 }
