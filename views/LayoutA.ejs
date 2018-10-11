@@ -20,37 +20,38 @@
     <script src="javascripts/react-with-addons.min.js" ></script>
     <!--echart-->
     <script src="javascripts/echarts.min.js" ></script>
-        <title><%= title %></title>
+    <title><%= title %></title>
+
+   
 </head>
 
 <body>
-  <header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#"><i class="fa fa-battery-full" style="font-size:36px"></i></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size:24px"></i><span class="sr-only"></span>關於我</a>
-          </li>
-
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-lightbulb-o" style="font-size:24px"></i><span class="sr-only"></span>學習資源</a>
-          </li>
-
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fa fa-thumb-tack" style="font-size:24px"></i><span class="sr-only"></span>目前目標</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-  </header>
+     <!-- Fixed navbar -->
+    
+     <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top bg-dark">
+            <a class="navbar-brand" href="/"><i class="fa fa-battery-full" style="font-size:36px"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/airquality"><i class="fa fa-industry" style="font-size:24px"></i><span class="sr-only"></span>空氣品質指數</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i class="fa fa-thumb-tack" style="font-size:24px"></i><span class="sr-only"></span>目前目標</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i class="fa fa-lightbulb-o" style="font-size:24px"></i><span class="sr-only"></span>學習資源</a>
+                </li>
+                <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size:24px"></i><span class="sr-only"></span>關於我</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <br>
          <%- body -%>
 </body>
 
