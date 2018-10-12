@@ -6,3 +6,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+@font-face {
+  font-family: "MrRobotFont";
+  src: url(../font/MR\ ROBOT.ttf);
+}
+
+.MrRobotFont5px {
+  font-family: "MrRobotFont";
+  font-size: 5px;
+}
+.MrRobotFont10px {
+  font-family: "MrRobotFont";
+  font-size: 10px;
+}
+.MrRobotFont15px {
+  font-family: "MrRobotFont";
+  font-size: 15px;
+}
+.MrRobotFont20px {
+  font-family: "MrRobotFont";
+  font-size: 20px;
+}
