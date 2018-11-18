@@ -18,10 +18,9 @@ https.get(url, res => {
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-
+  
   res.render('pages/airquality', { 
-    title: '空氣品質指數' ,
-    label1:'全台縣市空氣品質',
+    title: '今日空氣品質' ,
     jsonstr:JSON.stringify(jsonstr)
   }); 
 

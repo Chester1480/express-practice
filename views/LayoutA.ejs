@@ -1,76 +1,62 @@
+
 <!DOCTYPE html>
-
-<html>
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--CSS-->
     <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    
-    <script src="javascripts/jquery-3.3.1.min.js" ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+	<script src="javascripts/jquery-3.3.1.min.js" ></script>
     <script src="javascripts/bootstrap.min.js" ></script>
-    <!--React-->
-    <script src="javascripts/react.min.js" ></script>
-    <script src="javascripts/react-dom.min.js" ></script>
-    <script src="javascripts/react-dom-server.min.js" ></script>
-    <script src="javascripts/react-with-addons.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="javascripts/ie10-viewport-bug-workaround.js" ></script>  
     <!--echart-->
     <script src="javascripts/echarts.min.js" ></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
-    <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=Kpjp7jddqVUhWK5VkrfNt3YNezY88NtR&services=&t=20170517145936"></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
     <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+	 <!--React-->
+    <script src="javascripts/react.min.js" ></script>
+    <script src="javascripts/react-dom.min.js" ></script>
+    <script src="javascripts/react-dom-server.min.js" ></script>
+    <script src="javascripts/react-with-addons.min.js" ></script>
     <title><%= title %></title>
-</head>
+  </head>
 
-<body>
-     <!-- Fixed navbar -->
-     <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top bg-dark">
-            <a class="navbar-brand" href="/"><i class="fa fa-battery-full" style="font-size:36px"></i></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
+  <body>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="/airquality"><i class="fa fa-industry" style="font-size:24px"></i><span class="sr-only"></span>空氣品質指數</a>
-                </li>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/"><i class="fa fa-battery-full" style="font-size:36px"></i></a>
 
-                <li class="nav-item">
-                    <a class="nav-link" href=""><i class="fa fa-thumb-tack" style="font-size:24px"></i><span class="sr-only"></span>目前目標</a>
-                </li>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/airquality"><i class="fa fa-industry" style="font-size:24px"></i><span class="sr-only"></span>今日空氣品質</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+    <%- body -%>
 
-                <li class="nav-item">
-                    <a class="nav-link" href=""><i class="fa fa-lightbulb-o" style="font-size:24px"></i><span class="sr-only"></span>學習資源</a>
-                </li>
-
-                <li class="nav-item">
-                      <a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size:24px"></i><span class="sr-only"></span>關於我</a>
-                  </li>
-                  
-              </ul>
-            </div>
-          </nav>
-          <br>
-         <%- body -%>
-</body>
-
-<footer>
+    <footer>
         <nav class="navbar navbar-expand-md navbar-dark fixed-bottom bg-dark">
                 <div class="navbar-brand">
-                  <span class="MrRobotFont20px">Thanks for watching.</span>
+                  <span class="MrRobotFont20px">PM2.5 from OPENDATA.</span>
                 </div>
         </nav>
-</footer>
-
+    </footer>
+  </body>
 </html>
-
-

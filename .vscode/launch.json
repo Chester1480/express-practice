@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "啟動程式",
-            "program": "${workspaceFolder}\\app.js"
+            "program": "${workspaceFolder}\\bin\\www"
         }
     ]
 }
