@@ -1,1 +1,53 @@
 <% layout('LayoutA') -%>
+
+<script>
+    var count = 10;
+    var randomNumber = [];
+    //最大100~最小1
+    var maxNum = 100 
+    var minNum = 1; 
+    //建立隨機陣列
+    while(randomNumber.length <count) {
+        var n = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;  
+        while(!randomNumber.includes(n)) {
+            randomNumber.push(n);
+        }
+    }
+
+    function findSecondLargeNumber(arr){	
+	    var fLargeNum = 0;
+	    var sLargeNum = 0;
+	    for(var i=0; i<arr.length; i++){
+		    if(fLargeNum < arr[i]){
+			    sLargeNum = fLargeNum;
+			    fLargeNum = arr[i];			
+		    }else if(sLargeNum < arr[i]){
+			    sLargeNum = arr[i];
+		    }
+	    }
+	    return sLargeNum;
+    }
+
+    //數字內的陣列
+    //console.log(randomNumber);
+    //第二大的數字
+	//console.log(findSecondLargeNumber(randomNumber));
+    //因為陣列從0開始算 所以+1
+    //console.log("第二大的數字位置在第"+(randomNumber.indexOf(findSecondLargeNumber(randomNumber))+1)+"個");
+    
+    //從1到100 加起來
+    var n =100;
+    let sum = 0  
+    //迴圈方式
+    for(let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    console.log(sum);
+    //遞迴方式
+    function Recursive(a){
+        if(a==1) return 1;
+        else return Recursive(a-1)+a;
+    }
+    console.log(Recursive(n));
+
+</script>
